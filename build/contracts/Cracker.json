@@ -1,0 +1,2476 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addressvault",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "crack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "locked",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vault",
+      "outputs": [
+        {
+          "internalType": "contract Vault",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "contracts/ethernaut_volt.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/ethernaut_volt.sol",
+    "exportedSymbols": {
+      "Cracker": [
+        76
+      ],
+      "Vault": [
+        35
+      ]
+    },
+    "id": 77,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Vault",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 35,
+        "linearizedBaseContracts": [
+          35
+        ],
+        "name": "Vault",
+        "nameLocation": "66:5:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "cf309012",
+            "id": 3,
+            "mutability": "mutable",
+            "name": "locked",
+            "nameLocation": "88:6:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 35,
+            "src": "76:18:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "76:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5,
+            "mutability": "mutable",
+            "name": "password",
+            "nameLocation": "114:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 35,
+            "src": "98:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 4,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "98:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 18,
+              "nodeType": "Block",
+              "src": "158:50:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 12,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 10,
+                      "name": "locked",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "164:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 11,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "173:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "164:13:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 13,
+                  "nodeType": "ExpressionStatement",
+                  "src": "164:13:0"
+                },
+                {
+                  "expression": {
+                    "id": 16,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 14,
+                      "name": "password",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "183:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 15,
+                      "name": "_password",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "194:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "183:20:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 17,
+                  "nodeType": "ExpressionStatement",
+                  "src": "183:20:0"
+                }
+              ]
+            },
+            "id": 19,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7,
+                  "mutability": "mutable",
+                  "name": "_password",
+                  "nameLocation": "147:9:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19,
+                  "src": "139:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "139:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "138:19:0"
+            },
+            "returnParameters": {
+              "id": 9,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "158:0:0"
+            },
+            "scope": 35,
+            "src": "127:81:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 33,
+              "nodeType": "Block",
+              "src": "254:66:0",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    },
+                    "id": 26,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 24,
+                      "name": "password",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "264:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "id": 25,
+                      "name": "_password",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 21,
+                      "src": "276:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "264:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 32,
+                  "nodeType": "IfStatement",
+                  "src": "260:56:0",
+                  "trueBody": {
+                    "id": 31,
+                    "nodeType": "Block",
+                    "src": "287:29:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 29,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 27,
+                            "name": "locked",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3,
+                            "src": "295:6:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "66616c7365",
+                            "id": 28,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "304:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "false"
+                          },
+                          "src": "295:14:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 30,
+                        "nodeType": "ExpressionStatement",
+                        "src": "295:14:0"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "functionSelector": "ec9b5b3a",
+            "id": 34,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unlock",
+            "nameLocation": "221:6:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 22,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21,
+                  "mutability": "mutable",
+                  "name": "_password",
+                  "nameLocation": "236:9:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34,
+                  "src": "228:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 20,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "228:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "227:19:0"
+            },
+            "returnParameters": {
+              "id": 23,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "254:0:0"
+            },
+            "scope": 35,
+            "src": "212:108:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 77,
+        "src": "57:265:0",
+        "usedErrors": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Cracker",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 76,
+        "linearizedBaseContracts": [
+          76
+        ],
+        "name": "Cracker",
+        "nameLocation": "333:7:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "fbfa77cf",
+            "id": 38,
+            "mutability": "mutable",
+            "name": "vault",
+            "nameLocation": "359:5:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "346:18:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Vault_$35",
+              "typeString": "contract Vault"
+            },
+            "typeName": {
+              "id": 37,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 36,
+                "name": "Vault",
+                "nameLocations": [
+                  "346:5:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 35,
+                "src": "346:5:0"
+              },
+              "referencedDeclaration": 35,
+              "src": "346:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Vault_$35",
+                "typeString": "contract Vault"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "cf309012",
+            "id": 40,
+            "mutability": "mutable",
+            "name": "locked",
+            "nameLocation": "382:6:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "370:18:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 39,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "370:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 42,
+            "mutability": "mutable",
+            "name": "password",
+            "nameLocation": "410:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "394:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 41,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "394:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 64,
+              "nodeType": "Block",
+              "src": "464:100:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 51,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 47,
+                      "name": "vault",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 38,
+                      "src": "472:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Vault_$35",
+                        "typeString": "contract Vault"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 49,
+                          "name": "_addressvault",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44,
+                          "src": "486:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 48,
+                        "name": "Vault",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 35,
+                        "src": "480:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Vault_$35_$",
+                          "typeString": "type(contract Vault)"
+                        }
+                      },
+                      "id": 50,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "480:20:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Vault_$35",
+                        "typeString": "contract Vault"
+                      }
+                    },
+                    "src": "472:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Vault_$35",
+                      "typeString": "contract Vault"
+                    }
+                  },
+                  "id": 52,
+                  "nodeType": "ExpressionStatement",
+                  "src": "472:28:0"
+                },
+                {
+                  "expression": {
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 53,
+                      "name": "locked",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 40,
+                      "src": "508:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 54,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "517:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "508:13:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "ExpressionStatement",
+                  "src": "508:13:0"
+                },
+                {
+                  "expression": {
+                    "id": 62,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 57,
+                      "name": "password",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42,
+                      "src": "529:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "hexValue": "6861636b6564",
+                          "id": 60,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "548:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_ece03feed23bf66cc242d5d1686ac974fcee068d7a2c7ff92e79b1bf288cb217",
+                            "typeString": "literal_string \"hacked\""
+                          },
+                          "value": "hacked"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_stringliteral_ece03feed23bf66cc242d5d1686ac974fcee068d7a2c7ff92e79b1bf288cb217",
+                            "typeString": "literal_string \"hacked\""
+                          }
+                        ],
+                        "id": 59,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "540:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_bytes32_$",
+                          "typeString": "type(bytes32)"
+                        },
+                        "typeName": {
+                          "id": 58,
+                          "name": "bytes32",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "540:7:0",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 61,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "540:17:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "529:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 63,
+                  "nodeType": "ExpressionStatement",
+                  "src": "529:28:0"
+                }
+              ]
+            },
+            "id": 65,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44,
+                  "mutability": "mutable",
+                  "name": "_addressvault",
+                  "nameLocation": "449:13:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 65,
+                  "src": "441:21:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 43,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "440:23:0"
+            },
+            "returnParameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "464:0:0"
+            },
+            "scope": 76,
+            "src": "429:135:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 74,
+              "nodeType": "Block",
+              "src": "593:37:0",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 71,
+                        "name": "password",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42,
+                        "src": "614:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "id": 68,
+                        "name": "vault",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 38,
+                        "src": "601:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vault_$35",
+                          "typeString": "contract Vault"
+                        }
+                      },
+                      "id": 70,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "607:6:0",
+                      "memberName": "unlock",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 34,
+                      "src": "601:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$returns$__$",
+                        "typeString": "function (bytes32) external"
+                      }
+                    },
+                    "id": 72,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "601:22:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 73,
+                  "nodeType": "ExpressionStatement",
+                  "src": "601:22:0"
+                }
+              ]
+            },
+            "functionSelector": "9872c1ba",
+            "id": 75,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "crack",
+            "nameLocation": "579:5:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "584:2:0"
+            },
+            "returnParameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "593:0:0"
+            },
+            "scope": 76,
+            "src": "570:60:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 77,
+        "src": "324:308:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:600:0"
+  },
+  "bytecode": "608060405234801561001057600080fd5b506040516101e83803806101e883398101604081905261002f91610066565b600080546001600160a81b0319166001600160a01b0390921691909117600160a01b179055651a1858dad95960d21b600155610096565b60006020828403121561007857600080fd5b81516001600160a01b038116811461008f57600080fd5b9392505050565b610143806100a56000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80639872c1ba14610046578063cf30901214610050578063fbfa77cf14610079575b600080fd5b61004e6100a4565b005b60005461006490600160a01b900460ff1681565b60405190151581526020015b60405180910390f35b60005461008c906001600160a01b031681565b6040516001600160a01b039091168152602001610070565b60005460015460405163764dad9d60e11b81526001600160a01b039092169163ec9b5b3a916100d99160040190815260200190565b600060405180830381600087803b1580156100f357600080fd5b505af1158015610107573d6000803e3d6000fd5b5050505056fea264697066735822122043767543cc1c616d2d3d23350b4170e995ed21a7055dc0f74a37c42d4715fc4364736f6c63430008110033",
+  "bytecodeSha1": "d1115e73a7a96c858ec4a584ef669fedbe7c2d51",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.17+commit.8df45f5f"
+  },
+  "contractName": "Cracker",
+  "coverageMap": {
+    "branches": {
+      "0": {}
+    },
+    "statements": {
+      "0": {
+        "Cracker.crack": {
+          "0": [
+            601,
+            623
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "Vault"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c80639872c1ba14610046578063cf30901214610050578063fbfa77cf14610079575b600080fd5b61004e6100a4565b005b60005461006490600160a01b900460ff1681565b60405190151581526020015b60405180910390f35b60005461008c906001600160a01b031681565b6040516001600160a01b039091168152602001610070565b60005460015460405163764dad9d60e11b81526001600160a01b039092169163ec9b5b3a916100d99160040190815260200190565b600060405180830381600087803b1580156100f357600080fd5b505af1158015610107573d6000803e3d6000fd5b5050505056fea264697066735822122043767543cc1c616d2d3d23350b4170e995ed21a7055dc0f74a37c42d4715fc4364736f6c63430008110033",
+  "deployedSourceMap": "324:308:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;570:60;;;:::i;:::-;;370:18;;;;;-1:-1:-1;;;370:18:0;;;;;;;;;179:14:1;;172:22;154:41;;142:2;127:18;370::0;;;;;;;;346;;;;;-1:-1:-1;;;;;346:18:0;;;;;;-1:-1:-1;;;;;382:32:1;;;364:51;;352:2;337:18;346::0;206:215:1;570:60:0;601:5;;;614:8;601:22;;-1:-1:-1;;;601:22:0;;-1:-1:-1;;;;;601:5:0;;;;:12;;:22;;;;572:25:1;;;560:2;545:18;;426:177;601:22:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;570:60::o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    324,
+    632
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x41 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x9872C1BA EQ PUSH2 0x46 JUMPI DUP1 PUSH4 0xCF309012 EQ PUSH2 0x50 JUMPI DUP1 PUSH4 0xFBFA77CF EQ PUSH2 0x79 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x4E PUSH2 0xA4 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x64 SWAP1 PUSH1 0x1 PUSH1 0xA0 SHL SWAP1 DIV PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 ISZERO ISZERO DUP2 MSTORE PUSH1 0x20 ADD JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x8C SWAP1 PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP2 AND DUP2 MSTORE PUSH1 0x20 ADD PUSH2 0x70 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x1 SLOAD PUSH1 0x40 MLOAD PUSH4 0x764DAD9D PUSH1 0xE1 SHL DUP2 MSTORE PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP3 AND SWAP2 PUSH4 0xEC9B5B3A SWAP2 PUSH2 0xD9 SWAP2 PUSH1 0x4 ADD SWAP1 DUP2 MSTORE PUSH1 0x20 ADD SWAP1 JUMP JUMPDEST PUSH1 0x0 PUSH1 0x40 MLOAD DUP1 DUP4 SUB DUP2 PUSH1 0x0 DUP8 DUP1 EXTCODESIZE ISZERO DUP1 ISZERO PUSH2 0xF3 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP GAS CALL ISZERO DUP1 ISZERO PUSH2 0x107 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 NUMBER PUSH23 0x7543CC1C616D2D3D23350B4170E995ED21A7055DC0F74A CALLDATACOPY 0xC4 0x2D SELFBALANCE ISZERO 0xFC NUMBER PUSH5 0x736F6C6343 STOP ADDMOD GT STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "CALLVALUE",
+      "path": "0"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "CALLDATASIZE",
+      "path": "0"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "LT",
+      "path": "0"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x41"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "CALLDATALOAD",
+      "path": "0"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "SHR",
+      "path": "0"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x9872C1BA"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x46"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0xCF309012"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x50"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0xFBFA77CF"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x79"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "68": {
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "69": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        324,
+        632
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "70": {
+      "fn": "Cracker.crack",
+      "offset": [
+        570,
+        630
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "71": {
+      "fn": "Cracker.crack",
+      "offset": [
+        570,
+        630
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x4E"
+    },
+    "74": {
+      "fn": "Cracker.crack",
+      "offset": [
+        570,
+        630
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xA4"
+    },
+    "77": {
+      "fn": "Cracker.crack",
+      "jump": "i",
+      "offset": [
+        570,
+        630
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "78": {
+      "fn": "Cracker.crack",
+      "offset": [
+        570,
+        630
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "79": {
+      "fn": "Cracker.crack",
+      "offset": [
+        570,
+        630
+      ],
+      "op": "STOP",
+      "path": "0"
+    },
+    "80": {
+      "offset": [
+        370,
+        388
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "81": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "83": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "84": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x64"
+    },
+    "87": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "88": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "90": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "92": {
+      "op": "SHL"
+    },
+    "93": {
+      "offset": [
+        370,
+        388
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "94": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "DIV",
+      "path": "0"
+    },
+    "95": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xFF"
+    },
+    "97": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "AND",
+      "path": "0"
+    },
+    "98": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "99": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "100": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "101": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "103": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "104": {
+      "op": "SWAP1"
+    },
+    "105": {
+      "op": "ISZERO"
+    },
+    "106": {
+      "op": "ISZERO"
+    },
+    "107": {
+      "op": "DUP2"
+    },
+    "108": {
+      "op": "MSTORE"
+    },
+    "109": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "111": {
+      "op": "ADD"
+    },
+    "112": {
+      "offset": [
+        370,
+        388
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "113": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "115": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "116": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "117": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "118": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "SUB",
+      "path": "0"
+    },
+    "119": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "120": {
+      "fn": "Cracker.crack",
+      "offset": [
+        370,
+        388
+      ],
+      "op": "RETURN",
+      "path": "0"
+    },
+    "121": {
+      "offset": [
+        346,
+        364
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "122": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "124": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "125": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x8C"
+    },
+    "128": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "129": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "131": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "133": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "135": {
+      "op": "SHL"
+    },
+    "136": {
+      "op": "SUB"
+    },
+    "137": {
+      "offset": [
+        346,
+        364
+      ],
+      "op": "AND",
+      "path": "0"
+    },
+    "138": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "139": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "140": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "141": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "143": {
+      "fn": "Cracker.crack",
+      "offset": [
+        346,
+        364
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "144": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "146": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "148": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "150": {
+      "op": "SHL"
+    },
+    "151": {
+      "op": "SUB"
+    },
+    "152": {
+      "op": "SWAP1"
+    },
+    "153": {
+      "op": "SWAP2"
+    },
+    "154": {
+      "op": "AND"
+    },
+    "155": {
+      "op": "DUP2"
+    },
+    "156": {
+      "op": "MSTORE"
+    },
+    "157": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "159": {
+      "op": "ADD"
+    },
+    "160": {
+      "offset": [
+        346,
+        364
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x70"
+    },
+    "163": {
+      "op": "JUMP"
+    },
+    "164": {
+      "fn": "Cracker.crack",
+      "offset": [
+        570,
+        630
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "165": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        606
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 0,
+      "value": "0x0"
+    },
+    "167": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        606
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "168": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        606
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "170": {
+      "fn": "Cracker.crack",
+      "offset": [
+        614,
+        622
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "171": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "173": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "174": {
+      "op": "PUSH4",
+      "value": "0x764DAD9D"
+    },
+    "179": {
+      "op": "PUSH1",
+      "value": "0xE1"
+    },
+    "181": {
+      "op": "SHL"
+    },
+    "182": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "183": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "184": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "186": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "188": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "190": {
+      "op": "SHL"
+    },
+    "191": {
+      "op": "SUB"
+    },
+    "192": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        606
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "193": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        606
+      ],
+      "op": "SWAP3",
+      "path": "0"
+    },
+    "194": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        606
+      ],
+      "op": "AND",
+      "path": "0"
+    },
+    "195": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        606
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "196": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        613
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0xEC9B5B3A"
+    },
+    "201": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        613
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "202": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xD9"
+    },
+    "205": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "206": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "208": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "209": {
+      "op": "SWAP1"
+    },
+    "210": {
+      "op": "DUP2"
+    },
+    "211": {
+      "op": "MSTORE"
+    },
+    "212": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "214": {
+      "op": "ADD"
+    },
+    "215": {
+      "op": "SWAP1"
+    },
+    "216": {
+      "op": "JUMP"
+    },
+    "217": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "218": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "220": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "222": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "223": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "224": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "225": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "SUB",
+      "path": "0"
+    },
+    "226": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "227": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "229": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP8",
+      "path": "0"
+    },
+    "230": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "231": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "EXTCODESIZE",
+      "path": "0"
+    },
+    "232": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "233": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "234": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "235": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xF3"
+    },
+    "238": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "239": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "241": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "242": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "243": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "244": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "245": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "GAS",
+      "path": "0"
+    },
+    "246": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "CALL",
+      "path": "0"
+    },
+    "247": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "248": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "249": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "250": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x107"
+    },
+    "253": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "254": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "0"
+    },
+    "255": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "257": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "258": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "RETURNDATACOPY",
+      "path": "0"
+    },
+    "259": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "0"
+    },
+    "260": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "262": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "263": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "264": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "265": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "266": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "267": {
+      "fn": "Cracker.crack",
+      "offset": [
+        601,
+        623
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "268": {
+      "fn": "Cracker.crack",
+      "jump": "o",
+      "offset": [
+        570,
+        630
+      ],
+      "op": "JUMP",
+      "path": "0"
+    }
+  },
+  "sha1": "77ea66b3cf045e7a5b7d99619d1217c954578f79",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract Vault {\n  bool public locked;\n  bytes32 private password;\n\n  constructor(bytes32 _password) {\n    locked = true;\n    password = _password;\n  }\n\n  function unlock(bytes32 _password) public {\n    if (password == _password) {\n      locked = false;\n    }\n  }\n}\n\ncontract Cracker{\n    Vault public vault;\n    bool public locked;\n    bytes32 private password;\n    \n    constructor(address _addressvault) {\n      vault = Vault(_addressvault);\n      locked = true;\n      password = bytes32('hacked');\n    }\n\n    function crack() public{\n      vault.unlock(password);\n    }\n}",
+  "sourceMap": "324:308:0:-:0;;;429:135;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;472:5;:28;;-1:-1:-1;;;;;;508:13:0;-1:-1:-1;;;;;472:28:0;;;508:13;;;;-1:-1:-1;;;508:13:0;;;-1:-1:-1;;;472:28:0;529;324:308;;14:290:1;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:1;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:1:o;:::-;324:308:0;;;;;;",
+  "sourcePath": "contracts/ethernaut_volt.sol",
+  "type": "contract"
+}
