@@ -16,19 +16,3 @@ contract Vault {
     }
   }
 }
-
-contract Cracker{
-    Vault public vault;
-    bool public locked;
-    bytes32 private password;
-    
-    constructor(address _addressvault) {
-      vault = Vault(_addressvault);
-      locked = true;
-      password = bytes32('hacked');
-    }
-
-    function crack() public{
-      vault.unlock(password);
-    }
-}

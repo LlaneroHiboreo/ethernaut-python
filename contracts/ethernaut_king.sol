@@ -25,6 +25,7 @@ contract King {
     }
 }
 
+/*
 contract falseKing{
     King public king;
     
@@ -37,4 +38,4 @@ contract falseKing{
         prize = msg.value;
     }
 
-}
+}*/

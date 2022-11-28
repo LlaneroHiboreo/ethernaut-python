@@ -8,10 +8,9 @@ def deploy_vault(owr, usr1):
     # deploy contract flip
     psw = encode_hex('Goodbye cocodrile!')
     scv = Vault.deploy(psw, {'from':owr})
-    sch = Cracker.deploy(scv.address, {'from':usr1})
-    return scv,sch
+    return scv
 
-def unlock(vault, hvault, usr1):
+def unlock(vault):
     # unlocked?
     un1 = vault.locked()
     # get psw, stored in position 1 of block
@@ -23,12 +22,12 @@ def unlock(vault, hvault, usr1):
     # check lock
     un2 = vault.locked()
     print(f'[*] Initially locked {un1}')
-    print(f'[*] Vault unlocked {un2}')
+    print(f'[*] Vault locked {un2}')
 def main():
     # deployer and first owner
     owner = accounts[0]
     user1 = accounts[1]
     # deploy contract
-    c_v, c_h = deploy_vault(owner, user1)
+    c_v = deploy_vault(owner, user1)
     # make guess
-    unlock(c_v,c_h, user1)
+    unlock(c_v)
